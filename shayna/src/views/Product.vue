@@ -67,7 +67,7 @@
                                     <h4>$495.00</h4>
                                 </div>
                                 <div class="quantity">
-                                    <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                                   <router-link to='/cart'> <a href="" class="primary-btn pd-cart">Add To Cart</a></router-link>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +77,7 @@
         </div>
     </section>
     <!-- Product Shop Section End -->
+    <ProductsRelated />
     <FooterShayna />
   </div>
 </template>
@@ -86,6 +87,8 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import HeaderShayna from '@/components/HeaderShayna.vue';
 import FooterShayna from '@/components/FooterShayna.vue';
+import ProductsRelated from '@/components/ProductsRelated.vue';
+
 
 import carousel from 'vue-owl-carousel';
 
@@ -97,6 +100,7 @@ export default {
     // HelloWorld
     HeaderShayna,
     FooterShayna,
+    ProductsRelated,
     carousel
   },
   data() {
